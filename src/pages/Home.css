@@ -1,0 +1,137 @@
+.layout-top {
+    overflow-y: auto;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+    max-height: stretch;
+    box-sizing: border-box;
+}
+.grey {
+    background-color: var(--card-background,#f5f5f5);
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+}
+.layout-top-chip {
+    background: white !important;
+    margin-left: 25%;
+    padding-top: 40px !important;
+    height: 96px !important;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: -webkit-fill-available;
+    width: stretch;
+    padding: 8px 0;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    display: flex;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    position: fixed !important;
+    top: 0 !important;
+}
+.chip {
+    background: var(--live-tab-background,#f5f5f5) !important;
+    color: var(--live-tab-text-color,#8b93b1) !important;
+    display: flex;
+    border-radius: 25px !important;
+    padding: 12px 21px !important;
+    margin-left: 8px !important;
+    text-transform: capitalize !important;
+    text-decoration: none;
+    justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 700 !important; 
+}
+.chip-selected {
+    color: #fff !important;
+    background-color: #71C6F7 !important;
+}
+.css-1iz24ed-MuiChip-root {
+    padding: 12px 10px !important;
+    height: 40px !important;
+}
+.nav-bars {
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 8px;
+        position: relative;
+        padding: 2px 8px;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+}
+.first-layout {
+    margin-left: 16px !important;
+}
+.bars-texts {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.color-default {
+    background: linear-gradient(
+    51.57deg,#ff7451,#ff5558 51.15%,#ff5162) !important;
+}
+.default-color {
+    color: linear-gradient(
+    51.57deg,#ff7451,#ff5558 51.15%,#ff5162) !important;
+}
+
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+  .css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    /* background-color: #fff; */
+    /* color: rgba(0, 0, 0, 0.87); */
+    /* -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    /* border-radius: 4px; */
+    box-shadow: none !important;
+    overflow: hidden;
+    max-width: 345px;
+}
+.video-section{
+    margin-top: 12% !important;
+}

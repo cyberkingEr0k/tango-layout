@@ -1,0 +1,47 @@
+.offer-card {
+    padding-top: 16px;
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+    margin: 24px;
+    border-radius: 10px;
+}
+.offer-btn {
+    flex-direction: column-reverse !important;
+}
+.offer-text {
+    color: var(--text-primary,#17191c);
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    margin-bottom: 12px !important;
+    text-align: center;
+}
+.offer-img {
+    position: absolute !important;
+    left: 50%;
+    top: -45px;
+    transform: translateX(-50%) !important;
+    height: 48px;
+    width: 60px;
+}
+.offer-btn-chip {
+    background: linear-gradient(
+    51.57deg,#ff7451,#ff5558 51.15%,#ff5162) !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 20px !important;
+    width: 100% !important;
+}
+.img-border {
+    border-radius: 12px !important;
+}
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    background-color: #fff !important;
+    /* color: rgba(0, 0, 0, 0.87); */
+    /* -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    /* border-radius: 4px; */
+    box-shadow: none !important;
+    overflow: hidden;
+    max-width: 345px;
+}
