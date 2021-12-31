@@ -1,9 +1,12 @@
-import { Chip, Grid, Paper, Stack } from '@mui/material';
+import { Chip, FormControl, Grid, Input, InputAdornment, InputLabel, Paper, Stack } from '@mui/material';
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import './Home.css';
 import OfferCard from '../components/OfferCard';
 import VideocamIcon from '@mui/icons-material/Videocam';
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import MCard from '../components/MCard';
 const Item = styled(Paper)(({ theme }) => ({
     // ...theme.typography.body2,
@@ -17,9 +20,18 @@ export default class Home extends React.Component {
       return( 
             <div>
                 <Grid container spacing={0}>
-                    <Grid item xs={0.5}>
+                    <Grid item xs={0.75}>
                         <div className='layout-top first-layout'>
-                        <Grid container>
+                        <div className="flex-container">
+                        <div>
+                        <img src="https://www.tango.me/images/e0a97aef668cb63a53573d1d7423864a-brand-logo.svg" className="w5wP8" alt="logo" />
+                        </div>
+                        <div><VideocamIcon fontSize="large" className='default-color'/></div>
+                        <div><GroupsOutlinedIcon fontSize="large"/></div>  
+                        <div><FeedOutlinedIcon fontSize="large"/></div> 
+                        <div><ChatOutlinedIcon fontSize="large"/></div> 
+                        </div>
+                        {/* <Grid container>
                         <Grid item xs={12}>
                         <img src="https://www.tango.me/images/e0a97aef668cb63a53573d1d7423864a-brand-logo.svg" className="w5wP8" alt="logo" />
                         </Grid>
@@ -35,19 +47,20 @@ export default class Home extends React.Component {
                         <Grid item xs={12} className='nav-bars'>
                             <div className='nav-bars'></div>
                         </Grid>
-                        </Grid>
+                        </Grid> */}
                         </div>
                     </Grid>
-                    <Grid item xs={2.5}>
+                    <Grid item xs={2}>
                         <div className='layout-top grey'>
-                        <Grid container spacing={2}>
+                        <Grid>
                         <Grid item xs={12}>
-                        <div className="search-container">
-                            <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search" />
-                            <button type="submit"><i className="fa fa-search"></i></button>
-                            </form>
-                        </div>
+                        <div className="searchBar">
+                        <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <svg style={{width:24,height:24}} viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                        </svg>
+                        </button>
+                    </div>
                             <OfferCard text="Get +20% coins for every purchase" btnText="SHOW OFFER" img="https://www.tango.me/images/3d18171a6bb26c808f6a55631477fe71-20.png"/>
                             <OfferCard text="Bring friends and earn cash" btnText="START NOW" img="https://www.tango.me/images/3d18171a6bb26c808f6a55631477fe71-20.png"/>
                             <OfferCard text="Partner with tango" btnText="SIGN UP" img="https://www.tango.me/images/63e982f6ed5dae99b3bedd8a6b20e20e-reward.png"/>
@@ -56,7 +69,7 @@ export default class Home extends React.Component {
                         </Grid>
                         </div>
                     </Grid>
-                    <Grid item xs={9}>
+                    <Grid item xs={9.25}>
                         <div className='layout-top'>
                             <Grid item xs={12}>
                                 <div className='layout-top-chip'>
