@@ -63,9 +63,9 @@ export default class Home extends React.Component {
                         </button>
                     </div>
                             <OfferCard text="Get +20% coins for every purchase" btnText="SHOW OFFER" img="https://www.tango.me/images/3d18171a6bb26c808f6a55631477fe71-20.png"/>
-                            <OfferCard text="Bring friends and earn cash" btnText="START NOW" img="https://www.tango.me/images/3d18171a6bb26c808f6a55631477fe71-20.png"/>
-                            <OfferCard text="Partner with tango" btnText="SIGN UP" img="https://www.tango.me/images/63e982f6ed5dae99b3bedd8a6b20e20e-reward.png"/>
-                            <OfferCard text="Join Tango community" btnText="JOIN NOW" img="https://www.tango.me/images/3d18171a6bb26c808f6a55631477fe71-20.png"/>
+                            <OfferCard text="Bring friends and earn cash" btnText="START NOW" img="https://www.tango.me/images/63e982f6ed5dae99b3bedd8a6b20e20e-reward.png"/>
+                            <OfferCard text="Partner with tango" btnText="SIGN UP" img="https://www.tango.me/images/24944f9bc5b6ac7ddca3347fc99a2d43-agencies_banner.svg" inner={<div className="_3ys-L iQp3X"><span>Earn for every Referral</span></div>}/>
+                            <OfferCard text="Join Tango community" btnText="JOIN NOW" inner={<ul className="iQp3X"><li className="_3ys-L"><span>Chat with broadcasters</span></li><li className="_3ys-L"><span>Support broadcasters</span></li><li className="_3ys-L"><span>Follow your favorite streams</span></li></ul>}/>
                         </Grid>
                         </Grid>
                         </div>

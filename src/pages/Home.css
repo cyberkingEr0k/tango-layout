@@ -71,7 +71,7 @@
         cursor: pointer;
 }
 .first-layout {
-    margin-left: 16px !important;
+  padding: 20px;
 }
 .bars-texts {
     font-size: 12px;

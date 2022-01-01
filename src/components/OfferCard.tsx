@@ -9,10 +9,11 @@ import './OfferCard.css';
 export default function OfferCard(props: any) {
   return (
     <Card sx={{ maxWidth: 345 }} className="offer-card">
-        {/* <img id="buy-coins-banner" src={props.img} className="offer-img" alt="" /> */}
+        {props.img &&<img id="buy-coins-banner" src={props.img} className="offer-img" />}
       <CardActionArea>
           <div className="offer-text">
             {props.text}
+            {props.inner}
           </div>
       </CardActionArea>
       <CardActions className="offer-btn">
