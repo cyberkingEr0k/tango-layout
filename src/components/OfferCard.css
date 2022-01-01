@@ -3,18 +3,19 @@
     margin-left: 24px !important;
     margin-right: 24px !important;
     margin: 24px;
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 .offer-btn {
     flex-direction: column-reverse !important;
 }
 .offer-text {
     color: var(--text-primary,#17191c);
-    font-weight: 700 !important;
+    font-weight: 550 !important;
     font-size: 20px !important;
     line-height: 24px !important;
     margin-bottom: 12px !important;
     text-align: center;
+    font-family: Lato,Roboto,sans-serif;
 }
 .offer-img {
     position: absolute !important;
@@ -44,4 +45,15 @@
     box-shadow: none !important;
     overflow: hidden;
     max-width: 345px;
+}
+.css-185gdzj-MuiCardHeader-root {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px !important;
 }

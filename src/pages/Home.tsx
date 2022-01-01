@@ -26,7 +26,8 @@ export default class Home extends React.Component {
                         <div>
                         <img src="https://www.tango.me/images/e0a97aef668cb63a53573d1d7423864a-brand-logo.svg" className="w5wP8" alt="logo" />
                         </div>
-                        <div><VideocamIcon fontSize="large" className='default-color'/></div>
+                        <div><VideocamIcon fontSize="large" className='default-color'></VideocamIcon></div>
+                        {/* <div></div> */}
                         <div><GroupsOutlinedIcon fontSize="large"/></div>  
                         <div><FeedOutlinedIcon fontSize="large"/></div> 
                         <div><ChatOutlinedIcon fontSize="large"/></div> 

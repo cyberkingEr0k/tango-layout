@@ -42,7 +42,7 @@ export default function MCard() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="194"
+        height="190"
         image="https://cget.tango.me/contentserver/download/Ycgn7wAAASlZUX5EgQGhlg/AkebuIt3/thumbnail"
         alt="Paella dish"
         className='img-border'
@@ -53,12 +53,8 @@ export default function MCard() {
             R
           </Avatar>
         }
-        // action={
-        //   <IconButton aria-label="settings">
-        //     <MoreVertIcon />
-        //   </IconButton>
-        // }
         title="Shrimp"
+        subheader="0, 14.7k"
       />
     </Card>
   );
